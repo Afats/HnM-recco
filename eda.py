@@ -40,8 +40,12 @@ customer_df['fashion_news_frequency'] = customer_df['fashion_news_frequency'].fi
 customer_df['fashion_news_frequency'] = customer_df['fashion_news_frequency'].replace('NONE', 'none')
 customer_df['age'] = customer_df['age'].fillna(customer_df['age'].mean())
 customer_df['age'] = customer_df['age'].astype(int)
+article_df['detail_desc'] = article_df['detail_desc'].fillna('None')
 
 print(customer_df.isnull().sum())
+print(article_df.isnull().sum())
+
+
 
 
 
