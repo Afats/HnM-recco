@@ -39,6 +39,7 @@ customer_df['club_member_status'] = customer_df['club_member_status'].fillna('PR
 customer_df['fashion_news_frequency'] = customer_df['fashion_news_frequency'].fillna('None')
 customer_df['fashion_news_frequency'] = customer_df['fashion_news_frequency'].replace('NONE', 'none')
 customer_df['age'] = customer_df['age'].fillna(customer_df['age'].mean())
+customer_df['age'] = customer_df['age'].astype(int)
 
 print(customer_df.isnull().sum())
 
