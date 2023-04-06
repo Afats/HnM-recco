@@ -1,6 +1,6 @@
 # HnM-recco
 
-[Kaggle Notebook]https://www.kaggle.com/must4f4/hmm-notebook) (public book rn)
+[Kaggle Notebook](https://www.kaggle.com/must4f4/hmm-notebook)
 #
 [Timeline plan](https://docs.google.com/document/d/1fympkrY5gOamQhmuqznydggkF3N8A_gqxU5n_ih6Lf4/edit)
 #
