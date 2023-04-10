@@ -1,3 +1,7 @@
 ##### HnM files and saved pickle models #####
 *.csv
 *.pkl
+
+# ignore model directories for now
+als/
+pop/
