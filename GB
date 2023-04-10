@@ -1,0 +1,43 @@
+import pandas as pd
+
+import numpy as np
+
+from sklearn.metrics import classification_report
+
+from sklearn.ensemble import GradientBoostingClassifier
+
+from sklearn.model_selection import train_test_split
+
+
+
+merged_df = pd.merge(transactions, articles, on='article_id')
+merged_df_final = pd.merge(merged_df, customers, on='customer_id') 
+
+# X matrix
+df1 = merged_df_final.drop(columns=['article_id'])
+
+# y vector
+df2 = merged_df_final['article_id']
+
+
+
+# 80:20 training and test set
+splitSize = 0.20 
+
+# Random number seeding for repeatability of the code
+seed = 123
+
+X_train, X_test, y_train, y_test = train_test_split(df1, df2, test_size=test_size, random_state=seed)
+
+
+# Model 
+gradient_booster = GradientBoostingClassifier(learning_rate=0.1)
+
+#Gradient boosting classifiers are required to implement gradient boosting.
+
+gradient_booster.fit(X_train,y_train)
+
+
+
+
+
